@@ -16,14 +16,13 @@
         text-align: center;
     }
 
-    /* Top header full-width lines and land image */
     .top-header {
         position: relative;
         margin-top: 20px;
     }
 
     .top-header img {
-        width: 200px; /* Adjust size */
+        width: 200px;
         display: block;
         margin: 0 auto;
     }
@@ -35,17 +34,10 @@
         margin: 8px 0;
     }
 
-    .logo {
-        margin-top: 20px;
-    }
-
     h1.glitch {
         font-size: 32px;
-        margin-top: 15px;
-        text-shadow:
-            0 0 4px #00eaff,
-            0 0 8px #00eaff,
-            0 0 12px #00eaff;
+        margin-top: 25px;
+        text-shadow: 0 0 4px #00eaff, 0 0 8px #00eaff, 0 0 12px #00eaff;
         animation: glitch 1.5s infinite;
     }
 
@@ -98,10 +90,12 @@
         text-shadow: 0 0 8px #00ff99;
         animation: footerGlow 3s infinite alternate;
     }
-.logo-wrap {
-        width: 260px;
-        height: 260px;
+
+    .logo-wrap {
+        width: 130px;
+        height: 130px;
         margin: 0 auto;
+        margin-top: 20px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -109,18 +103,13 @@
         position: relative;
         background: #006a4e;
         animation: bdGlow 4s infinite alternate;
-        box-shadow: 0 0 25px #00ff00, 0 0 60px #00ff00, 0 0 120px #00ff00;
+        box-shadow: 0 0 20px #00ff00, 0 0 45px #00ff00, 0 0 90px #00ff00;
     }
 
     @keyframes bdGlow {
         0% { background: #006a4e; box-shadow: 0 0 25px #00ff00, 0 0 60px #00ff00, 0 0 120px #00ff00; }
         50% { background: #006a4e; box-shadow: 0 0 25px #ff0000, 0 0 60px #ff0000, 0 0 120px #ff0000; }
         100% { background: #b30000; box-shadow: 0 0 25px #ff0000, 0 0 60px #ff0000, 0 0 140px #ff0000; }
-    }
-        50% { background: #006a4e; }
-        100% { background: red; }
-    }
-        100% { transform: scale(1.08); filter: blur(2px); }
     }
 
 @keyframes footerGlow {
@@ -134,17 +123,14 @@
 
 <body>
 
-    <!-- Top header full-width white line, land image, another line -->
     <div class="top-header">
-    <div class="top-header-line"></div>
-    <img src="kalima-text.png" alt="Bangladesh Land Shape">
-    <div class="top-header-line"></div>
+        <div class="top-header-line"></div>
+        <img src="images/kalima-text.png" alt="Bangladesh Land Shape">
+        <div class="top-header-line"></div>
     </div>
 
-
-    <!-- Logo below the land image -->
     <div class="logo-wrap">
-        <img src="bncf-logo.png" height="170" class="logo">
+        <img src="images/bncf-logo.png" height="130" class="logo">
     </div>
 
     <h1 class="glitch">HACKED BY BANGLADESH NATIONAL CYBER FORCE</h1>
@@ -156,8 +142,7 @@
         Digital security is our responsibility. Always follow ethical cybersecurity rules.
     </p>
 
-    <!-- Added Image Below Text -->
-    <img src="hacked.png" width="280" style="margin-top:15px; border:2px solid #00ffaa;">
+    <img src="images/hacked.png" width="280" style="margin-top:15px; border:2px solid #00ffaa;">
 
     <div class="tag-section">
         <a href="#">#CyberSecurity</a>
@@ -170,8 +155,9 @@
         Hacked by BNCF © 2025
     </div>
 
+<audio id="bgAudio" src="bncfsound.mp3" autoplay loop></audio>
+
 <script>
-    // Small flicker animation
     setInterval(() => {
         document.body.style.opacity = Math.random() > 0.95 ? 0.9 : 1;
     }, 100);
@@ -179,4 +165,3 @@
 
 </body>
 </html>
-
