@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hacked By BNCF</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        font-family: "Courier New", monospace;
+        color: #00f7ff;
+        text-align: center;
+    }
+
+    /* Top header full-width lines and land image */
+    .top-header {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .top-header img {
+        width: 200px; /* Adjust size */
+        display: block;
+        margin: 0 auto;
+    }
+
+    .top-header-line {
+        width: 100%;
+        height: 2px;
+        background: white;
+        margin: 8px 0;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    h1.glitch {
+        font-size: 32px;
+        margin-top: 15px;
+        text-shadow:
+            0 0 4px #00eaff,
+            0 0 8px #00eaff,
+            0 0 12px #00eaff;
+        animation: glitch 1.5s infinite;
+    }
+
+    @keyframes glitch {
+        0% { text-shadow: 2px 2px red; }
+        50% { text-shadow: -2px -2px green; }
+        100% { text-shadow: 2px -2px blue; }
+    }
+
+    .warning {
+        background: rgba(255,255,0,0.3);
+        padding: 6px 12px;
+        color: #fff;
+        display: inline-block;
+        margin-top: 10px;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+
+    .content-text {
+        max-width: 700px;
+        margin: 20px auto;
+        line-height: 1.6;
+        font-size: 22px;
+        color: #00ffaa;
+        padding: 0 20px;
+        font-family: 'VT323', monospace;
+        letter-spacing: 1px;
+    }
+
+    .tag-section a {
+        display: block;
+        font-size: 20px;
+        margin: 8px 0;
+        text-decoration: none;
+        color: #00f7ff;
+        transition: 0.3s;
+    }
+
+    .tag-section a:hover {
+        color: #ff0077;
+    }
+
+    .footer {
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'VT323', monospace;
+        color: #00ff99;
+        text-shadow: 0 0 8px #00ff99;
+        animation: footerGlow 3s infinite alternate;
+    }
+.logo-wrap {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: #006a4e;
+        animation: bdGlow 4s infinite alternate;
+        box-shadow: 0 0 25px #00ff00, 0 0 60px #00ff00, 0 0 120px #00ff00;
+    }
+
+    @keyframes bdGlow {
+        0% { background: #006a4e; box-shadow: 0 0 25px #00ff00, 0 0 60px #00ff00, 0 0 120px #00ff00; }
+        50% { background: #006a4e; box-shadow: 0 0 25px #ff0000, 0 0 60px #ff0000, 0 0 120px #ff0000; }
+        100% { background: #b30000; box-shadow: 0 0 25px #ff0000, 0 0 60px #ff0000, 0 0 140px #ff0000; }
+    }
+        50% { background: #006a4e; }
+        100% { background: red; }
+    }
+        100% { transform: scale(1.08); filter: blur(2px); }
+    }
+
+@keyframes footerGlow {
+        0% { color: #00ff99; text-shadow: 0 0 8px #00ff99; }
+        50% { color: #00eaff; text-shadow: 0 0 10px #00eaff; }
+        100% { color: #ff004c; text-shadow: 0 0 12px #ff004c; }
+    }
+
+</style>
+</head>
+
+<body>
+
+    <!-- Top header full-width white line, land image, another line -->
+    <div class="top-header">
+    <div class="top-header-line"></div>
+    <img src="images/kalima-text.png" alt="Bangladesh Land Shape">
+    <div class="top-header-line"></div>
+    </div>
+
+
+    <!-- Logo below the land image -->
+    <div class="logo-wrap">
+        <img src="images/bncf-logo.png" height="170" class="logo">
+    </div>
+
+    <h1 class="glitch">HACKED BY BANGLADESH NATIONAL CYBER FORCE</h1>
+
+    <div class="warning">Cyber Defense Active</div>
+
+    <p class="content-text">
+        This is a fictional cyber defense theme made for educational and creative design purposes.
+        Digital security is our responsibility. Always follow ethical cybersecurity rules.
+    </p>
+
+    <!-- Added Image Below Text -->
+    <img src="images/hacked.png" width="280" style="margin-top:15px; border:2px solid #00ffaa;">
+
+    <div class="tag-section">
+        <a href="#">#CyberSecurity</a>
+        <a href="#">#SecureBangladesh</a>
+        <a href="#">#EthicalHacking</a>
+        <a href="#">#DigitalSafety</a>
+    </div>
+
+    <div class="footer">
+        Hacked by BNCF © 2025
+    </div>
+
+<script>
+    // Small flicker animation
+    setInterval(() => {
+        document.body.style.opacity = Math.random() > 0.95 ? 0.9 : 1;
+    }, 100);
+</script>
+
+</body>
+</html>
