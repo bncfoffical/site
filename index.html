@@ -142,14 +142,14 @@
 
     <h1 class="glitch">HACKED BY BANGLADESH NATIONAL CYBER FORCE</h1>
 
-    <div class="warning">Cyber Defense Active</div>
+    <div class="warning">Hacking Reason</div>
 
     <p class="content-text">
-        This is a fictional cyber defense theme made for educational and creative design purposes.
-        Digital security is our responsibility. Always follow ethical cybersecurity rules.
+        The reason for hacking our site is border killing. If BSF does not stop this board killing, 
+        then next time there will be cyber attacks on government websites of India.
     </p>
 
-    <img src="hacked.png" width="280" style="margin-top:15px; border:2px solid #00ffaa;">
+    <img src="reason.png" width="280" style="margin-top:15px; border:2px solid #00ffaa;">
 
     <div class="tag-section">
         <a href="#">#HackedByBNCF</a>
@@ -168,9 +168,19 @@
     setInterval(() => {
         document.body.style.opacity = Math.random() > 0.95 ? 0.9 : 1;
     }, 100);
+// Enable sound after user interaction
+document.addEventListener('click', () => {
+    const audio = document.getElementById('bgAudio');
+    if (audio) {
+        audio.muted = false;
+        audio.play().catch(()=>{});
+    }
+}, { once: true });
+
 </script>
 
 </body>
 </html>
+
 
 
